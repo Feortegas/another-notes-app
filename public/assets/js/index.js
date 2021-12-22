@@ -52,19 +52,18 @@ const deleteNote = (id) =>
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
-  console.log('Got to this point - rendeActiveNote');
 
-  if (activeNote.id) {
+    // if (activeNote.id) {
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
-  } else {
-    noteTitle.removeAttribute('readonly');
-    noteText.removeAttribute('readonly');
-    noteTitle.value = '';
-    noteText.value = '';
-  }
+  // } else {
+  //   noteTitle.removeAttribute('readonly');
+  //   noteText.removeAttribute('readonly');
+  //   noteTitle.value = '';
+  //   noteText.value = '';
+  // }
 };
 
 const handleNoteSave = () => {
